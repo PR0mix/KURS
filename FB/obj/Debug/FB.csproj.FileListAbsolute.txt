@@ -1,0 +1,12 @@
+F:\kursova\FB\FB\bin\Debug\FB.exe.config
+F:\kursova\FB\FB\bin\Debug\FB.exe
+F:\kursova\FB\FB\bin\Debug\FB.pdb
+F:\kursova\FB\FB\obj\Debug\FB.csprojResolveAssemblyReference.cache
+F:\kursova\FB\FB\obj\Debug\FB.Form1.resources
+F:\kursova\FB\FB\obj\Debug\FB.Properties.Resources.resources
+F:\kursova\FB\FB\obj\Debug\FB.csproj.GenerateResource.Cache
+F:\kursova\FB\FB\obj\Debug\FB.exe
+F:\kursova\FB\FB\obj\Debug\FB.pdb
+F:\kursova\FB\FB\obj\Debug\FB.Form2.resources
+F:\kursova\FB\FB\obj\Debug\FB.Form3.resources
+F:\kursova\FB\FB\obj\Debug\FB.Form4.resources
