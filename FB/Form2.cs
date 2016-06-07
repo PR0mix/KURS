@@ -46,6 +46,32 @@ namespace FB
             else label5.Text = "Перевірте правильність введення даних";
         }
 
-       
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+            
+            if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9)) e.SuppressKeyPress = false;
+            
+            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9)) e.SuppressKeyPress = false;
+           
+
+            if ((e.KeyCode == Keys.Delete) || (e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Left) || (e.KeyCode == Keys.Right) || (e.KeyCode == Keys.Oemcomma))
+                e.SuppressKeyPress = false;
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+
+            if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9)) e.SuppressKeyPress = false;
+
+            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9)) e.SuppressKeyPress = false;
+
+
+            if ((e.KeyCode == Keys.Delete) || (e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Left) || (e.KeyCode == Keys.Right) )
+                e.SuppressKeyPress = false;
+        }
     }
 }

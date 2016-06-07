@@ -105,7 +105,7 @@ namespace FB
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 39);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Next Day";
+            this.button1.Text = "Наступний  день";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -193,7 +193,7 @@ namespace FB
         private System.Windows.Forms.ToolStripMenuItem deleteCompanyToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem купівляПродажToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;

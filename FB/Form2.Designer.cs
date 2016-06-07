@@ -100,6 +100,7 @@
             this.textBox2.Size = new System.Drawing.Size(211, 20);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "0";
+            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // textBox3
             // 
@@ -108,6 +109,7 @@
             this.textBox3.Size = new System.Drawing.Size(211, 20);
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "0";
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // textBox4
             // 
@@ -116,6 +118,7 @@
             this.textBox4.Size = new System.Drawing.Size(211, 20);
             this.textBox4.TabIndex = 8;
             this.textBox4.Text = "0";
+            this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // label5
             // 
@@ -142,7 +145,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Form2";
             this.Text = "Добавлення компанії";
-           
             this.ResumeLayout(false);
             this.PerformLayout();
 

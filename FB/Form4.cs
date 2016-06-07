@@ -42,6 +42,7 @@ namespace FB
                         f.Company[company - 1].YouShares = f.Company[company - 1].YouShares + klshares;
                         label3.Text = "Виконано";
                         label4.Text = "Ваш баланс: " + f.balance.ToString();
+                        f.label1.Text = "Ваш баланс: " + f.balance.ToString();
                     }
                     else label3.Text = "Недостатньо коштів на рахунку";
                 }
@@ -66,6 +67,20 @@ namespace FB
             {
                 f.dataGridView1.Rows.Add(i + 1, f.Company[i].cn(), f.Company[i].sp(), f.Company[i].ns(), f.Company[i].ys(), f.Company[i].vc());
             }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+
+            if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9)) e.SuppressKeyPress = false;
+
+            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9)) e.SuppressKeyPress = false;
+
+
+            if ((e.KeyCode == Keys.Delete) || (e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Left) || (e.KeyCode == Keys.Right) || (e.KeyCode == Keys.Oemcomma))
+                e.SuppressKeyPress = false;
         }
     }
 }
